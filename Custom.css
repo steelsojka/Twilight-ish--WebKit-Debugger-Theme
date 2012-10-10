@@ -59,6 +59,20 @@
   padding: 5px 0;
 }
 
+#elements-content .parent.selected + .children > li:last-child {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  background-color: #313232 !important;
+  border-bottom: 0;
+  text-shadow: 0px 1px 0px rgba(0,0,0,1);
+  position: relative;
+  top: 7px;
+  left: -11px;
+  border-bottom-left-radius: 10px;
+  border-left: 1px solid #888b8b;
+  border-bottom: 1px solid #888b8b;
+ }
+
 #elements-content .selected {
   /*padding-top: 2px !important;
   padding-bottom: 2px !important;*/
