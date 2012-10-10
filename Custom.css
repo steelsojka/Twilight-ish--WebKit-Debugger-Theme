@@ -1,0 +1,299 @@
+/**********************************************/
+/*
+/* Darker Skin by Darcy Clarke - 2011
+/*
+/* For how to install, or more themes, check out:
+/* http://darcyclarke.me/design/skin-your-chrome-inspector/
+/* 
+/* Color scheme is based on Joe Bergantine's Specials Board:
+/* http://joebergantine.com/werkstatt/seestyle
+/*
+/**********************************************/
+
+/**********************************************/
+/* Layout
+/**********************************************/
+
+
+#elements-content.source-code {
+  background: #141414 !important;
+  font-size: 12px !important;
+}
+
+#elements-content .highlight { 
+  color: #d4d4d4;
+}
+
+#elements-content .selection {
+
+}
+
+#elements-content .selection.selected {
+
+}
+
+
+#elements-content .parent:hover, #elements-content li:hover{
+  border-radius: 10px;
+  background-color: #313232 !important;
+}
+
+/*.outline-disclosure ol:focus li.parent.expanded.selected::before*/
+#elements-content .outline-disclosure li.parent::before,
+#elements-content .outline-disclosure ol:focus li.parent.expanded.selected::before {
+  background: none !important;
+  content: '' !important;
+}
+
+#elements-content .children.expanded {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#elements-content .parent.selected + .children {
+  background-color: #1f2020 !important;
+  border-left: 1px solid #888b8b;
+  border-bottom: 1px solid #888b8b;
+  border-right: 1px solid #888b8b;
+  box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,1);
+  padding: 5px 0;
+}
+
+#elements-content .selected {
+  /*padding-top: 2px !important;
+  padding-bottom: 2px !important;*/
+  border-radius: 10px;
+  background-color: #313232 !important;
+  border: 1px solid #888b8b;
+  padding: 2px 12px !important;
+  /*font-size: 13px;*/
+}
+
+#elements-content .parent {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+}
+
+#elements-content .parent.selected {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  background-color: #313232 !important;
+  border-left: 1px solid #888b8b !important;
+  border-top: 1px solid #888b8b !important;
+  border-right: 1px solid #888b8b !important;
+  border-bottom: 0;
+  padding: 2px 12px !important;
+  text-shadow: 0px 1px 0px rgba(0,0,0,1);
+  /*font-size: 13px !important;*/
+}
+
+#elements-content .parent.expanded {
+  
+}
+
+#elements-content .parent::before {
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+  position: relative;
+  z-index: 999;
+}
+
+#elements-content .parent.expanded::before {
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+}
+
+#elements-sidebar .styles-section .properties li.parent::before,
+#elements-sidebar .section > .header::before,
+#elements-sidebar .properties-tree li.parent::before,
+#elements-sidebar .event-bars .event-bar .header::before {
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+}
+
+#elements-sidebar .styles-section .properties li.parent.expanded::before,
+#elements-sidebar .section.expanded > .header::before,
+#elements-sidebar .properties-tree li.parent.expanded::before,
+#elements-sidebar .event-bars .event-bar.expanded .header::before {
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+}
+
+.text-editor-contents {
+  background-color: #141414 !important;
+}
+
+/**********************************************/
+/* HTML
+/**********************************************/
+#elements-content {
+}
+
+.webkit-html-comment {
+  color: #5e5a60 !important;
+}
+
+.webkit-html-doctype {
+
+}
+
+.webkit-html-tag {
+  color: #94885a !important;
+}
+
+.webkit-html-tag-name {
+    
+}
+
+.webkit-html-attribute {
+
+}
+
+.webkit-html-attribute-name {
+  color: #94885a !important;
+}
+
+.webkit-html-attribute-value {
+  color: #8f9d6a !important;
+}
+
+.webkit-html-external-link {
+  color: #6586ab !important;
+} 
+
+.webkit-html-resource-link {
+  color: #6586ab !important;
+}
+
+.webkit-html-text-tag {
+
+}
+
+.webkit-html-text-node {
+  color: #FFFFFF !important;
+}
+
+.webkit-html-css-node {
+  color: #c2c3c3 !important;
+}
+
+.webkit-html-js-node {
+  color: #c2c3c3 !important;
+}
+
+
+/**********************************************/
+/* CSS
+/**********************************************/
+
+.styles-section.matched-styles .properties li.parent .expand-element {
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+  opacity: 1 !important;
+  margin-right: 1px !important;
+  margin-left: -5px !important;
+}
+
+.styles-section.matched-styles .properties li.parent.expanded .expand-element {
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+  opacity: 1 !important;
+  margin-right: 1px !important;
+  margin-left: -5px !important;
+}
+
+.styles-section .implicit {
+  opacity: 0.8 !important;
+}
+
+.styles-section {
+  background-color: #141414 !important;
+  color: #f8f8f8 !important;
+}
+
+.styles-section .value {
+  color: #f1ee98 !important;
+}
+
+.styles-section .styles-selector .subtitle + span {
+  color: #8B98AB !important;
+}
+
+.styles-section .styles-selector .subtitle {
+  color: #f8f8f8 !important;
+}
+
+.styles-section .implicit > span {
+  color: #FFFFFF !important;
+}
+
+.webkit-css-comment {
+  color: #5e5a60 !important;
+}
+
+.webkit-css-url {
+  color: #8B98AB !important;
+}
+
+.webkit-css-color {
+  color: #c47740 !important;
+}
+
+.webkit-css-selector {
+  color: #8B98AB !important;
+} 
+
+.webkit-css-property {
+  color: #beaf75 !important;
+}
+
+.webkit-css-number {
+  color: #ca7740 !important;
+}
+
+.webkit-css-keyword {
+  color: #f1ee98 !important;
+}
+
+.webkit-css-string {
+  color: #ca7740 !important;
+}
+
+.webkit-css-important {
+  color: #b8a869 !important;
+}
+
+
+/**********************************************/
+/* JavaScript
+/**********************************************/
+.script-view {
+  background-color: #141414 !important;
+  color: #f8f8f8;
+}
+
+.webkit-block-start {
+  color: #f8f8f8 !important;
+}
+
+.webkit-javascript-comment {
+  color: #5e5a60 !important;
+}
+
+.webkit-javascript-keyword {
+  color: #e8ee98 !important;
+}
+
+.webkit-javascript-ident {
+  color: #f8f8f8 !important;
+}
+
+.webkit-javascript-string {
+  color: #8f9d6a !important;
+}
+
+.webkit-javascript-number {
+  color: #c86a4d !important;
+}
+
+.webkit-javascript-regexp {
+  color: #E9C062 !important;
+}
+
+
