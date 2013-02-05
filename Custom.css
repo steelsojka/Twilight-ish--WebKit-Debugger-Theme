@@ -180,7 +180,15 @@
 .webkit-html-text-tag {
 
 }
-
+.webkit-html-text-node.editing {
+  color: #000000 !important;
+}
+.webkit-html-attribute.editing {
+  color: #979797 !important;
+}
+.webkit-html-attribute.editing > * {
+  color: #000000 !important;
+}
 .webkit-html-text-node {
   color: #FFFFFF !important;
 }
@@ -197,6 +205,11 @@
 /**********************************************/
 /* CSS
 /**********************************************/
+
+.child-editing > span .webkit-css-property,
+.child-editing span .value {
+  color : #000000 !important;
+}
 
 .styles-section.matched-styles .properties li.parent .expand-element {
   content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
@@ -311,4 +324,27 @@
   color: #E9C062 !important;
 }
 
+/*****************************/
+/* Console
+/*****************************/
+
+.console-error-level {
+  box-shadow: inset -35px 0 0px #FF0000 !important;
+}
+.console-log-level {
+  box-shadow: inset -35px 0 0px #5b90db !important;
+}
+
+.console-message ol:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), 0 -12px 0 rgba(0,0,0,0.1);
+}
+
+.console-message li:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+#console-messages > span {
+  background-color: rgba(0,0,0,0.05);
+  box-shadow: inset -35px 0 0px #000000 !important;
+}
 
