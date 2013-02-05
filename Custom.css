@@ -249,7 +249,8 @@
   color: #c47740 !important;
 }
 
-.webkit-css-selector {
+.webkit-css-selector,
+.styles-section .selector-matches {
   color: #8B98AB !important;
 } 
 
