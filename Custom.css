@@ -33,7 +33,7 @@
 }
 
 
-#elements-content .parent:hover, #elements-content li:hover ,{
+#elements-content .parent:hover, #elements-content li:hover {
   border-radius: 10px;
   background-color: #313232 !important;
 }
